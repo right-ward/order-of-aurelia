@@ -12,7 +12,6 @@
         "requiredBuilding": "Library",
         "uniques": [
             "[+2 Science] from [Jungle] tiles [in this city]",
-            "[2] [Science]",
             "[25]% [Science]"
         ],
         "requiredTech": "Education",
@@ -39,7 +38,6 @@
         "uniqueTo": "Order of Aurelia",
         "replaces": "Workshop",
         "uniques": [
-            "[2] Production",
             "[25]% [Production]"
         ],
         "civilopediaText": [
@@ -62,7 +60,6 @@
         "uniqueTo": "Order of Aurelia",
         "replaces": "Market",
         "uniques": [
-            "[2] Gold",
             "[25]% [Gold]"
         ],
         "civilopediaText": [
@@ -81,9 +78,7 @@
         "uniqueTo": "Order of Aurelia",
         "replaces": "Hospital",
         "uniques": [
-            "[2] Food",
-            "[25]% [Food]",
-            "[1] Happiness"
+            "[25]% [Food]"
         ],
         "civilopediaText": [
             {
