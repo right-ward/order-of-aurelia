@@ -1,0 +1,111 @@
+
+game.png
+size: 1024, 512
+format: RGBA8888
+filter: MipMapLinearLinear, MipMapLinearLinear
+repeat: none
+BuildingIcons/Asclepius's Palace
+  rotate: false
+  xy: 4, 4
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Athena's University
+  rotate: false
+  xy: 268, 268
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Eyes of Heimdall
+  rotate: false
+  xy: 476, 268
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hephaestus's Workshop
+  rotate: false
+  xy: 684, 268
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/Hermes's Guild
+  rotate: false
+  xy: 212, 4
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+BuildingIcons/The Aurelia Project
+  rotate: false
+  xy: 420, 60
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+LeaderIcons/King Lucian
+  rotate: false
+  xy: 4, 212
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+LeaderPortraits/King Lucian
+  rotate: false
+  xy: 4, 212
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+NationIcons/Order of Aurelia
+  rotate: false
+  xy: 628, 58
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ReligionIcons/Cult of Aurelia
+  rotate: false
+  xy: 892, 368
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Hannibal's Legacy
+  rotate: false
+  xy: 628, 166
+  size: 100, 94
+  orig: 100, 94
+  offset: 0, 0
+  index: -1
+UnitIcons/The Order's Infantry
+  rotate: false
+  xy: 736, 160
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/The Order's Knights
+  rotate: false
+  xy: 892, 260
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/The Order's Neo-Infantry
+  rotate: false
+  xy: 844, 152
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/The Order's Riflemen
+  rotate: false
+  xy: 844, 44
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
