@@ -1,0 +1,92 @@
+name: Update Aurelia icons
+
+on:
+  push:
+    paths:
+      - ".github/workflows/update-icons.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-icons:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Resize icons and refresh atlas regions
+        run: |
+          python -m pip install --disable-pip-version-check pillow
+          python <<'PY'
+          from pathlib import Path
+          from PIL import Image
+
+          nation_path = Path("Images/NationIcons/Order of Aurelia.png")
+          religion_path = Path("Images/ReligionIcons/Cult of Aurelia.png")
+          atlas_path = Path("game.png")
+
+          nation = Image.open(nation_path).convert("RGBA")
+          if nation.size != (100, 100):
+              raise SystemExit(f"Expected nation icon to be 100x100, got {nation.size}")
+
+          # Keep the atlas/source canvas at 100x100 while enlarging the artwork itself by 70%.
+          scaled = nation.resize((170, 170), Image.Resampling.NEAREST)
+          enlarged = Image.new("RGBA", (100, 100), (0, 0, 0, 0))
+          enlarged.alpha_composite(scaled, (-35, -35))
+
+          enlarged.save(nation_path)
+          enlarged.save(religion_path)
+
+          atlas = Image.open(atlas_path).convert("RGBA")
+          if atlas.size != (1024, 512):
+              raise SystemExit(f"Expected atlas to be 1024x512, got {atlas.size}")
+
+          # Coordinates from game.atlas.
+          atlas.paste(enlarged, (628, 58))
+          atlas.paste(enlarged, (892, 368))
+          atlas.save(atlas_path)
+
+          bbox = enlarged.getbbox()
+          print(f"Nation/religion icon size: {enlarged.size}")
+          print(f"Visible bounds after 1.7x scale: {bbox}")
+          print(f"Nation file bytes: {nation_path.stat().st_size}")
+          print(f"Religion file bytes: {religion_path.stat().st_size}")
+          print(f"Atlas file bytes: {atlas_path.stat().st_size}")
+          PY
+
+      - name: Verify
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageChops
+
+          nation = Image.open("Images/NationIcons/Order of Aurelia.png").convert("RGBA")
+          religion = Image.open("Images/ReligionIcons/Cult of Aurelia.png").convert("RGBA")
+          atlas = Image.open("game.png").convert("RGBA")
+
+          assert nation.size == (100, 100)
+          assert religion.size == (100, 100)
+          assert atlas.size == (1024, 512)
+          assert ImageChops.difference(nation, religion).getbbox() is None
+          assert ImageChops.difference(atlas.crop((628, 58, 728, 158)), nation).getbbox() is None
+          assert ImageChops.difference(atlas.crop((892, 368, 992, 468)), nation).getbbox() is None
+          print("Verified: source icons are identical and both atlas regions match the enlarged nation icon.")
+          PY
+
+      - name: Commit and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "Images/NationIcons/Order of Aurelia.png" "Images/ReligionIcons/Cult of Aurelia.png" game.png
+          git rm ".github/workflows/update-icons.yml"
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Enlarge Aurelia nation icon and reuse it for religion"
+          git push
