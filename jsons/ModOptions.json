@@ -1,6 +1,8 @@
 {
     "author": "right-ward",
     "modUrl": "https://github.com/right-ward/order_of_aurelia",
+    "modSize": 176,
+    "defaultBranch": "main",
     "topics": [
         "unciv-mod",
         "unciv-mod-expansions"
