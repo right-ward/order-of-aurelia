@@ -60,14 +60,14 @@ LeaderPortraits/King Lucian
   orig: 256, 256
   offset: 0, 0
   index: -1
-NationIcons/Order of Aurelia
+ReligionIcons/Cult of Aurelia
   rotate: false
-  xy: 628, 58
+  xy: 892, 368
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-ReligionIcons/Cult of Aurelia
+NationIcons/Order of Aurelia
   rotate: false
   xy: 892, 368
   size: 100, 100
@@ -83,28 +83,28 @@ UnitIcons/Hannibal's Legacy
   index: -1
 UnitIcons/The Order's Infantry
   rotate: false
-  xy: 736, 160
+  xy: 628, 58
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Knights
   rotate: false
-  xy: 892, 260
+  xy: 736, 160
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Neo-Infantry
   rotate: false
-  xy: 844, 152
+  xy: 892, 260
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Riflemen
   rotate: false
-  xy: 844, 44
+  xy: 844, 152
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
