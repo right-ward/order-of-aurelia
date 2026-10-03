@@ -52,4 +52,4 @@ jobs:
         with:
           title: '[chore]: ci autoupdate'
           body: '[chore]: optimized images and updated `game.atlas`'
-          assignees: ['right-ward']
+          assignees: 'right-ward'
