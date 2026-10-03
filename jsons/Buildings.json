@@ -12,8 +12,8 @@
         "requiredBuilding": "Library",
         "uniques": [
             "[+2 Science] from [Jungle] tiles [in this city]",
-            "+2 Science",
-            "+25% Science"
+            "+2 [Science]",
+            "[25%] [Science]"
         ],
         "requiredTech": "Education",
         "uniqueTo": "Order of Aurelia",
@@ -40,7 +40,7 @@
         "replaces": "Workshop",
         "uniques": [
             "+2 Production",
-            "+25% Production"
+            "[25%] [Production]"
         ],
         "civilopediaText": [
             {
@@ -63,7 +63,7 @@
         "replaces": "Market",
         "uniques": [
             "+2 Gold",
-            "+25% Gold"
+            "[25%] [Gold]"
         ],
         "civilopediaText": [
             {
@@ -82,7 +82,7 @@
         "replaces": "Hospital",
         "uniques": [
             "+2 Food",
-            "+25% Food",
+            "[25%] [Food]",
             "+1 Happiness"
         ],
         "civilopediaText": [
@@ -100,7 +100,7 @@
             "Gain an extra spy",
             "Gain an extra spy",
             "Gain an extra spy",
-            "[+50]% spy effectiveness",
+            "[50]% spy effectiveness [in all cities]",
             "Only available <starting from the [Renaissance era]>"
         ],
         "civilopediaText": [

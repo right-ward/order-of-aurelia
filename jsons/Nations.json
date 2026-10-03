@@ -36,9 +36,9 @@
         "uniqueName": "Many Hands, One Will",
         "uniqueText": "Many Hands, One Will: +50% Production while the empire is Happy. A Future Worth Building: completing any building grants 100 Science and 100 Culture.",
         "uniques": [
-            "[+50]% [Production] <while the empire is happy>",
-            "Gain [100] Science <upon constructing [All]>",
-            "Gain [100] Culture <upon constructing [All]>"
+            "[50]% [Production] <while the empire is happy>",
+            "Gain [100] [Science] <upon constructing [All]>",
+            "Gain [100] [Culture] <upon constructing [All]>"
         ],
         "cities": [
             "Aurelia",
