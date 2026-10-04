@@ -1,110 +1,110 @@
 
 game.png
-size: 1024, 512
+size: 2048, 2048
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 BuildingIcons/Asclepius's Palace
   rotate: false
-  xy: 4, 4
+  xy: 4, 320
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 BuildingIcons/Athena's University
   rotate: false
-  xy: 268, 268
+  xy: 1266, 1582
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 BuildingIcons/Eyes of Heimdall
   rotate: false
-  xy: 476, 268
+  xy: 4, 112
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 BuildingIcons/Hephaestus's Workshop
   rotate: false
-  xy: 684, 268
+  xy: 212, 320
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 BuildingIcons/Hermes's Guild
   rotate: false
-  xy: 212, 4
+  xy: 1266, 1374
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 BuildingIcons/The Aurelia Project
   rotate: false
-  xy: 420, 60
+  xy: 1474, 1582
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 LeaderIcons/King Lucian
   rotate: false
-  xy: 4, 212
-  size: 256, 256
-  orig: 256, 256
+  xy: 4, 528
+  size: 1254, 1254
+  orig: 1254, 1254
   offset: 0, 0
   index: -1
 LeaderPortraits/King Lucian
   rotate: false
-  xy: 4, 212
-  size: 256, 256
-  orig: 256, 256
+  xy: 4, 528
+  size: 1254, 1254
+  orig: 1254, 1254
   offset: 0, 0
   index: -1
 ReligionIcons/Cult of Aurelia
   rotate: false
-  xy: 892, 368
+  xy: 4, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 NationIcons/Order of Aurelia
   rotate: false
-  xy: 892, 368
+  xy: 4, 4
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/Hannibal's Legacy
   rotate: false
-  xy: 628, 166
+  xy: 212, 218
   size: 100, 94
   orig: 100, 94
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Infantry
   rotate: false
-  xy: 628, 58
+  xy: 420, 420
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Knights
   rotate: false
-  xy: 736, 160
+  xy: 1266, 1266
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Neo-Infantry
   rotate: false
-  xy: 892, 260
+  xy: 1474, 1474
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 UnitIcons/The Order's Riflemen
   rotate: false
-  xy: 844, 152
+  xy: 1682, 1682
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
